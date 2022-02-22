@@ -3239,7 +3239,7 @@ input, select, textarea {
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
-
+            opacity: 0.2;
 			z-index: -1;
 
 		}
@@ -3392,13 +3392,32 @@ input, select, textarea {
 			line-height: 1;
 		}
 
-		#intro p {
-			font-size: 1.25rem;
-			font-style: italic;
-			margin-top: -0.25rem;
-			text-align: center;
-		}
+		
+#intro p {
+  width: 33ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-style: italic;
+  margin-top: -0.25rem;
+  text-align: center;
+  font-size: 2em;
+  color:#F92626;
+  
+}
 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 		#intro + #header {
 			margin-top: -20rem;
 		}
