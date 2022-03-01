@@ -3400,6 +3400,7 @@ input, select, textarea {
   overflow: hidden;
   border-right: 3px solid;
   font-style: italic;
+  font-weight: bold;
   margin-top: -0.25rem;
   text-align: center;
   font-size: 2em;
